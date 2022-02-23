@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap");
+
+*,
+*::after,
+*::before {
+  @apply box-border;
+}
+
+body {
+  @apply font-nunito text-eerie-black bg-FAFA;
+}
+
+#root {
+  @apply dark:bg-gunmetal-DARK;
+}
