@@ -54,7 +54,7 @@ function SelectRegion({ selected }) {
             <li className="cursor-default select-none relative py-2 pl-3 pr-9">
               <div className="flex items-center">
                 <Link
-                  to={`/?reg=${reg}`}
+                  to={`?reg=${reg}`}
                   onClick={() => {
                     setShow(false);
                   }}
