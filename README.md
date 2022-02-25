@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live](https://jnfussion.github.io/rest-countries-api-with-color-theme-switcher/settings/pages)
+- Live Site URL: [Live](https://jnfussion.github.io/rest-countries-api-with-color-theme-switcher/)
 
 ## My process
 
