@@ -64,6 +64,7 @@ function Home() {
       <div className="my-10 grid grid-cols-layout gap-x-20 gap-y-14">
         {countries.map(({ flags, name, population, region, capital }) => (
           <Item
+            key={name.common || name}
             flagUrl={flags.svg}
             name={name.common || name}
             population={population}
