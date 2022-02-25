@@ -12,10 +12,8 @@ function App() {
         (!("theme" in localStorage) &&
           window.matchMedia("(prefers-color-scheme: dark)").matches)
       ) {
-        console.log("AAAAA");
         document.documentElement.classList.add("dark");
       } else {
-        console.log("BBBBBB");
         document.documentElement.classList.remove("dark");
       }
     };

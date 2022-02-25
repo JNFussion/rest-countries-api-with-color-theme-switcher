@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaMoon } from "react-icons/fa";
 import { MdWbSunny } from "react-icons/md";
 
-function toggle(setter) {
+function toggle() {
   if (localStorage.theme === "dark") {
     localStorage.theme = "light";
     document.documentElement.classList.remove("dark");
@@ -18,8 +18,8 @@ function ToggleTheme() {
   return (
     <button
       type="button"
-      onClick={() => toggle(setIsDark)}
-      className="flex items-center gap-4 text-eerie-black dark:text-white"
+      onClick={toggle}
+      className="flex items-center lg:gap-4 gap-2 text-eerie-black dark:text-white"
     >
       <span>{isDark ? <MdWbSunny /> : <FaMoon />}</span>
       <span>{isDark ? "Light" : "Dark"} mode</span>

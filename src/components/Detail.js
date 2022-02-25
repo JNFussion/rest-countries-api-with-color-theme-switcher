@@ -17,7 +17,6 @@ function Detail() {
   function handleClick(code) {
     fetch(`https://restcountries.com/v2/alpha/${code}`).then((response) =>
       response.json().then((data) => {
-        console.log(data);
         navigate(`/detail/${data.name}`);
       })
     );
@@ -25,7 +24,7 @@ function Detail() {
 
   if (country) {
     return (
-      <main className="max-w-[1440px] mx-auto dark:text-white">
+      <main className="max-w-[1440px] mx-auto dark:text-white px-4  md:px-20 2xl:px-0">
         <div className="my-16">
           <button
             type="button"
@@ -39,14 +38,14 @@ function Detail() {
           </button>
         </div>
 
-        <article className="max-h-[480px] flex gap-20">
-          <div className="w-2/4">
-            <img src={country.flags.svg} alt="" className="h-full" />
+        <article className="lg:max-h-[480px] lg:flex lg:gap-20 flex-wrap">
+          <div className="md:w-2/4">
+            <img src={country.flags.svg} alt="" className="xl:h-full" />
           </div>
           <div className="flex-1">
             <section>
               <h2 className="my-10 text-2xl font-bold">{country.name}</h2>
-              <ul className="flex flex-col flex-wrap gap-y-4 gap-x-20 max-h-52 border-black">
+              <ul className="grid md:flex md:flex-col md:flex-wrap gap-4 md:gap-y-4 md:gap-x-20 md:max-h-52 border-black">
                 <li>
                   <span className="font-semibold">Native Name: </span>
                   <span className="font-light">{country.nativeName}</span>
@@ -95,7 +94,7 @@ function Detail() {
                 </li>
               </ul>
             </section>
-            <section className="my-16 flex items-center gap-4">
+            <section className="my-16 lg:flex lg:items-center lg:gap-4">
               <h3 className="font-semibold">Border Countries:</h3>
               <ul className="flex flex-wrap gap-3">
                 {country.borders &&

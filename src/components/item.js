@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 function Item({ flagUrl, name, population, region, capital }) {
   return (
     <article className="h-80 flex flex-col bg-white dark:bg-gunmetal dark:text-white rounded shadow">
-      <div className="flex-1 overflow-hidden">
+      <div className="flex-1 overflow-hidden rounded-t">
         <a href={`/detail/${name}`}>
           <img src={flagUrl} alt="" />
         </a>

@@ -6,7 +6,7 @@ function SelectRegion({ selected }) {
   const [show, setShow] = useState(false);
 
   return (
-    <div>
+    <div className="w-fit">
       <div className="mt-1 relative">
         <button
           type="button"
