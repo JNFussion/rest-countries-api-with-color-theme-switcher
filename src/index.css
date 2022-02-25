@@ -15,5 +15,5 @@ body {
 }
 
 #root {
-  @apply dark:bg-gunmetal-DARK;
+  @apply dark:bg-gunmetal-DARK min-h-screen;
 }
