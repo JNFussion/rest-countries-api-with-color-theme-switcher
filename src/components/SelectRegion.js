@@ -38,8 +38,8 @@ function SelectRegion({ selected }) {
         >
           <li className=" cursor-default select-none relative py-2 pl-3 pr-9">
             <div className="flex items-center">
-              <a
-                href="/"
+              <Link
+                to="/"
                 onClick={() => {
                   setShow(false);
                 }}
@@ -47,7 +47,7 @@ function SelectRegion({ selected }) {
                 <span className="font-normal ml-3 block truncate">
                   Reset filter
                 </span>
-              </a>
+              </Link>
             </div>
           </li>
           {["Africa", "Americas", "Asia", "Europe", "Oceania"].map((reg) => (
