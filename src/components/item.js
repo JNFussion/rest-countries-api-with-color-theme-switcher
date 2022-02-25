@@ -1,13 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 function Item({ flagUrl, name, population, region, capital }) {
   return (
     <article className="h-80 flex flex-col bg-white dark:bg-gunmetal dark:text-white rounded shadow">
       <div className="flex-1 overflow-hidden rounded-t">
-        <a href={`/detail/${name}`}>
+        <Link to={`/detail/${name}`}>
           <img src={flagUrl} alt="" />
-        </a>
+        </Link>
       </div>
       <section className="flex-1 p-4">
         <h2 className="my-4 font-bold text-xl">{name}</h2>
