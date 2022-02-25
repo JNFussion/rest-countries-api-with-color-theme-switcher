@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 function SelectRegion({ selected }) {
   const [show, setShow] = useState(false);
@@ -52,14 +53,14 @@ function SelectRegion({ selected }) {
           {["Africa", "Americas", "Asia", "Europe", "Oceania"].map((reg) => (
             <li className="cursor-default select-none relative py-2 pl-3 pr-9">
               <div className="flex items-center">
-                <a
-                  href={`/?reg=${reg}`}
+                <Link
+                  to={`/?reg=${reg}`}
                   onClick={() => {
                     setShow(false);
                   }}
                 >
                   <span className="font-normal ml-3 block truncate">{reg}</span>
-                </a>
+                </Link>
               </div>
             </li>
           ))}
