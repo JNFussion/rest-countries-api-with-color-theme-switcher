@@ -27,7 +27,7 @@ function Home() {
     }
 
     return () => {};
-  }, []);
+  }, [reg]);
 
   function handleSubmit(e) {
     e.preventDefault();
